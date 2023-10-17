@@ -1,0 +1,38 @@
+#calculator {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell input[type="button"] {
+    width: 100%;
+    font-size: 27px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 90%;
+    font-size: 25px;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 100%;
+}
+
+#result-holder {
+    grid-column: span 4;
+}
